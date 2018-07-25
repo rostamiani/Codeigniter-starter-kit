@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="{{meta_description}}">
+	<title>{{title}}</title>
+	<link rel="stylesheet" type="text/css" href="{{base_url()}}assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{{base_url()}}assets/mdb/css/mdb.min.css">
+	<link rel="stylesheet" type="text/css" href="{{base_url()}}assets/fontawesome-free-5.1.0-web/css/all.css">
+	<link rel="stylesheet" type="text/css" href="{{base_url()}}assets/pwt.datepicker/css/persian-datepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="{{base_url()}}assets/custom.css">
+	<link rel="stylesheet" type="text/css" href="{{base_url()}}assets/datatables/datatables.min.css">
+
+	<script src="{{base_url()}}assets/jquery/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		{% include '_header.twig' %}
+	</header>
+	{% include '_modals.twig' %}
+	{% block content %}{% endblock %}
+	<footer>
+		{% include '_footer.twig' %}
+	</footer>
+
+	<script src="{{base_url()}}assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="{{base_url()}}assets/parsley/parsley.min.js"></script>
+	{# <script src="{{base_url()}}assets/mdb/js/mdb.min.js"></script> #}
+	<script src="{{base_url()}}assets/fontawesome-free-5.1.0-web/js/all.js"></script>
+	<script src="{{base_url()}}assets/parsley/i18n/fa.js"></script>
+	<script src="{{base_url()}}assets/pwt.datepicker/js/persian-date.min.js"></script>
+	<script src="{{base_url()}}assets/pwt.datepicker/js/persian-datepicker.min.js"></script>
+	<script src="{{base_url()}}assets/datatables/datatables.min.js"></script>
+	<script src="{{base_url()}}assets/custom.js"></script>
+</body>
+</html>
+</html>

@@ -1,0 +1,119 @@
+<!-- Message Modal -->
+<div class="modal fade" id="modal_message">
+  <div class="modal-dialog modal-dialog-center">
+    <div class="modal-content">
+
+      {# Modal Header #}
+      <div class="modal-header border-0">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      {# Modal body #}
+      <div class="modal-body">
+          <span class="modal-message h5"></span>
+     </div>
+
+     {# Modal Footer #}
+     <div class="modal-footer border-0">
+         <button type="button" class="btn btn-success btn-ok" data-dismiss="modal">تایید</button>
+     </div>
+
+   </div>
+ </div>
+</div>
+
+<!-- Confirm Modal -->
+<div class="modal fade" id="modal_confirm">
+  <div class="modal-dialog modal-dialog-center">
+    <div class="modal-content">
+
+      {# Modal Header #}
+      <div class="modal-header border-0">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      {# Modal body #}
+      <div class="modal-body">
+          <span class="modal-message m-4"></span>
+     </div>
+
+     {# Modal Footer #}
+     <div class="modal-footer border-0">
+         <button type="button" class="btn btn-success btn-ok" data-dismiss="modal">تایید</button>
+         <button type="button" class="btn btn-danger btn-cancel" data-dismiss="modal">لغو</button>
+     </div>
+
+   </div>
+ </div>
+</div>
+
+<!-- custom Modal -->
+<div class="modal fade" id="modal_custom">
+  <div class="modal-dialog modal-dialog-center">
+    <div class="modal-content">
+
+      {# Modal Header #}
+      <div class="modal-header border-0">
+        {{modal.title}}
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      {# Modal body #}
+      <div class="modal-body">
+        	{{modal.body}}
+      </div>
+
+      {# Modal Footer #}
+      <div class="modal-footer border-0">
+        {{modal.footer}}
+      </div>
+
+   </div>
+ </div>
+</div>
+
+<script type="text/javascript">
+
+    // functions to use these modals
+
+    // Message modal
+    function modal_message(message, type="success", callback=function(){}) {
+
+      // Prepare modal
+      $('#modal_message .modal-message').html(message);
+      $('#modal_message .btn-ok')
+        .removeClass('btn-danger btn-success btn-info btn-warning')
+        .addClass('btn-'+type)
+        .click(callback);
+
+      // Show modal
+      $('#modal_message').modal();
+    }
+
+    // Confirm modal
+    function modal_confirm(message, callback=function(){}) {
+
+      // Prepare modal
+      $('#modal_confirm .modal-message').html(message);
+      $('#modal_confirm .btn-ok')
+        .off('click')
+        .on('click', callback);
+
+      // Show modal
+    }
+
+    function modal_custom() {
+      // Show modal
+      $('#modal_custom').modal();
+    }
+
+    $(document).ready(function() {
+
+      // Show initial modals if there is some
+      {% if alert is defined %}
+        modal_message("{{alert.text|replace({"\n":"","\r":""})|raw}}","{{alert.type}}");
+      {% endif %}
+
+    });
+
+</script>

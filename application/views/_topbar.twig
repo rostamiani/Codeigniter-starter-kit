@@ -1,0 +1,148 @@
+{# Top Bar #}
+
+<div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="">
+                <div class="form-group">
+                    <input type="text" placeholder="جستجو..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li>
+                <span class="m-r-sm text-muted welcome-message">سیستم جامع مستندات پارت پلاستیک</span>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-envelope"></i>  <span class="label label-warning">۱۶</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a class="dropdown-item float-right" href="profile.html">
+                                <img alt="image" class="rounded-circle" src="{{base_url()}}assets/img/a7.jpg">
+                            </a>
+                            <div>
+                                <strong>مهندس رستمیانی</strong> مستندات جدیدی در پروژه <strong>اصلاح برق کشی محوطه</strong> انجام داد.<br>
+                                <small class="text-muted"> ۳ روز قبل در ساعت 7:58 بعد از ظهر - ۱۳۹۷/۰۴/۲۰</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a class="dropdown-item float-right" href="profile.html">
+                                <img alt="image" class="rounded-circle" src="{{base_url()}}assets/img/a7.jpg">
+                            </a>
+                            <div>
+                                <strong>مهندس رستمیانی</strong> مستندات جدیدی در پروژه <strong>اصلاح برق کشی محوطه</strong> انجام داد.<br>
+                                <small class="text-muted"> ۳ روز قبل در ساعت 7:58 بعد از ظهر - ۱۳۹۷/۰۴/۲۰</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="mailbox.html" class="dropdown-item">
+                                <i class="fa fa-envelope"></i> <strong>نمایش تمامی پیام ها</strong>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell"></i>  <span class="label label-primary">۲</span>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="mailbox.html" class="dropdown-item">
+                            <div>
+                                <i class="fa fa-envelope fa-fw"></i> شما ۱۶ پیام خوانده نشده دارید
+                                <span class="float-left text-muted small">۳ دقیقه قبل</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="grid_options.html" class="dropdown-item">
+                            <div>
+                                <i class="fa fa-upload fa-fw"></i> سرور از کار افتاد
+                                <span class="float-left text-muted small">۲ دقیقه قبل</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="notifications.html" class="dropdown-item">
+                                <strong>نمایش تمامی هشدار ها</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="{{base_url()}}authentication/logout">
+                    <i class="fa fa-sign-out"></i> خروج
+                </a>
+            </li>
+{#             <li>
+                <a class="left-sidebar-toggle">
+                    <i class="fa fa-tasks"></i>
+                </a>
+            </li> #}
+        </ul>
+
+    </nav>
+</div>
+
+<div class="row wrapper page-header bg-white">
+    <h1>{{page_header|default('عنوان صفحه')}}</h2>
+</div>
+
+{# Beadcrumb #}
+{% if breadcrumb %}
+<div class="row bg-white px-4 pb-2">
+    <ol class="breadcrumb">
+        {% for item in breadcrumb %}
+            {% if item.active %}
+                <li class="breadcrumb-item active">
+                    <strong>{{item.title}}</strong>
+                </li>
+            {% else %}
+                <li class="breadcrumb-item active">
+                    <a href="{{item.url}}#" >{{item.title}}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ol>
+</div>
+{% endif %}
+
+{# Create top buttons #}
+{% if top_buttons %}
+    <div class="row border-bottom bg-white shadow p-3 bg-light border-top">
+        {% for button in top_buttons %}
+            <a href="{{button.link}}#" class="btn btn-{{button.type|default('primary')}} {{button.class}} ml-2" {{button.attr|raw}}>
+                {% if button.icon %}<i class="{{button.icon}} ml-1"></i>{% endif %}
+                {{button.title}}
+            </a>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{# Show alert boxes #}
+{% if alert_box %}
+    {% for alert in alert_box %}
+        <div class="shadow alert alert-{{alert.type|default('primary')}} mt-3 mb-0">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            {{alert.text|raw}}
+        </div>
+    {% endfor %}
+{% endif %}
