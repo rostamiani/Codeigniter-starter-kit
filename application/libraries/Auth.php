@@ -40,7 +40,7 @@ class Auth
 	}
 
 	// Limit this page for a specific type of user
-	public function for($user_type)
+	public function just_for($user_type)
 	{
 		// If not validated, redirect to main page
 		if (! $this->is($user_type)) 

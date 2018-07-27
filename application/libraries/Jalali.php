@@ -34,29 +34,41 @@ class Jalali
 	public function datetime_to_jalali($DateTime)
 	{
 		$date = new DateTime($DateTime,new DateTimeZone('Asia/Tehran'));
-		return $this->gregorian_to_jalali($date->format('Y'),$date->format('m'),$date->format('d'),'-');
+		$jalali = $this->gregorian_to_jalali($date->format('Y'),$date->format('m'),$date->format('d'),'-');
+		return trim($jalali);
 	}
 
 	// Just accepts dates in yyyy-mm-dd format
-	public function jalali_to_gregorian_str($str_date, $delimiter='-')
+	public function jalali_to_gregorian_str($str_datetime, $delimiter='-')
 	{
-		if (empty($str_date)) {
-			return $str_date;
+		if (empty($str_datetime)) {
+			return $str_datetime;
 		}
 
+		// Separate time
+		$arr_temp = explode(' ',$str_datetime);
+		$str_date = $arr_temp[0];
+		$str_time = isset($arr_temp[1])?$arr_temp[1]:'';
+
 		$date_array = explode($delimiter, $str_date);
-		return $this->jalali_to_gregorian($date_array[0], $date_array[1], $date_array[2], $delimiter).$date_array[3];
+		$gregorian = $this->jalali_to_gregorian($date_array[0], $date_array[1], $date_array[2], $delimiter).' '.$str_time;
+		return trim($gregorian);
 	}
 
 	// Just accepts dates in yyyy-mm-dd format
-	public function gregorian_to_jalali_str($str_date, $delimiter='-')
+	public function gregorian_to_jalali_str($str_datetime, $delimiter='-')
 	{
-		if (empty($str_date)) {
-			return $str_date;
+		if (empty($str_datetime)) {
+			return $str_datetime;
 		}
 
+		// Separate time
+		$arr_temp = explode(' ',$str_datetime);
+		$str_date = $arr_temp[0];
+		$str_time = isset($arr_temp[1])?$arr_temp[1]:'';
+
 		$date_array = explode($delimiter, $str_date);
-		return $this->gregorian_to_jalali($date_array[0], $date_array[1], $date_array[2], $delimiter).$date_array[3];
+		return $this->gregorian_to_jalali($date_array[0], $date_array[1], $date_array[2], $delimiter).' '.$str_time;
 	}
 
 	public function gregorian_to_jalali($g_y, $g_m, $g_d,$str)

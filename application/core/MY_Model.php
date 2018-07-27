@@ -825,6 +825,9 @@ class MY_Model extends CI_Model
 
             if(is_array($this->validate))
             {
+                // For validation sources other than post
+                $this->form_validation->set_data($data);
+             
                 $this->form_validation->set_rules($this->validate);
 
                 if ($this->form_validation->run() === TRUE)
