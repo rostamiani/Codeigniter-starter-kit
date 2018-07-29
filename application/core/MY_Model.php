@@ -122,6 +122,11 @@ class MY_Model extends CI_Model
      * CRUD INTERFACE
      * ------------------------------------------------------------ */
 
+    public function columns($columns)
+    {
+        $this->database->select($columns);
+    }
+
     /**
      * Fetch a single record based on the primary key. Returns an object.
      */
@@ -947,4 +952,40 @@ class MY_Model extends CI_Model
         $method = ($multi) ? 'result' : 'row';
         return $this->_temporary_return_type == 'array' ? $method . '_array' : $method;
     }
+
+    /**
+     * Jalali date converter functions
+     * These functions will change all fields with 'date_' prefix
+     * Used for callbacks
+     */
+    protected function dates_to_jalali($row)
+	{
+        $this->load->library('jalali');
+        
+        // For each field
+        foreach($row as $field => $value) {
+            // If the field name has 'date_' prefix, change it's format to Jalali
+            if (strpos($field,'date_') === 0) {
+                $row->$field = $this->jalali->gregorian_to_jalali_str($row->$field);
+            }
+        }
+
+        return $row;
+    }
+
+	protected function dates_to_georgian($row)
+	{
+        $this->load->library('jalali');
+
+        // For each field
+        foreach($row as $field => $value) {
+            // If the field name has 'date_' prefix, change it's format to gregorian
+            if (strpos($field,'date_') === 0) {
+                $row[$field] = $this->jalali->jalali_to_gregorian_str($row[$field]);
+            }
+        }
+
+		return $row;
+	}
+
 }

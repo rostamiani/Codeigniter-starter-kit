@@ -43,6 +43,11 @@ class MY_Controller extends CI_Controller {
 		
 		// Add labels to all templates
 		$this->twig->addGlobal('label', $this->config->config['label']);
+		
+		// Initialize session alert boxes
+		$_SESSION['alert_box'] = [];
+		$this->session->mark_as_flash('alert_box');
+		
 	}
 
 }

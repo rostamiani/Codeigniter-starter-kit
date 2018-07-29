@@ -1,5 +1,5 @@
 {# Top Bar #}
-
+<div class="shadow">
 <div class="row border-bottom">
     <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
@@ -132,22 +132,33 @@
 
 {# Create top buttons #}
 {% if top_buttons %}
-    <div class="row border-bottom bg-white shadow p-3 bg-light border-top">
-        {% for button in top_buttons %}
-            <a href="{{button.link}}#" class="btn btn-{{button.type|default('primary')}} {{button.class}} ml-2" {{button.attr|raw}}>
-                {% if button.icon %}<i class="{{button.icon}} ml-1"></i>{% endif %}
-                {{button.title}}
-            </a>
-        {% endfor %}
-    </div>
+<div class="row border-bottom bg-white p-3 bg-light border-top" id="top_buttons">
+    {% for button in top_buttons %}
+    <a href="{{button.link}}#" class="btn btn-{{button.type|default('primary')}} {{button.class}} ml-2" {{button.attr|raw}}>
+        {% if button.icon %}<i class="{{button.icon}} ml-1"></i>{% endif %}
+        {{button.title}}
+    </a>
+    {% endfor %}
+</div>
 {% endif %}
+</div>
 
 {# Show alert boxes #}
 {% if alert_box %}
-    {% for alert in alert_box %}
-        <div class="shadow alert alert-{{alert.type|default('primary')}} mt-3 mb-0">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            {{alert.text|raw}}
-        </div>
-    {% endfor %}
+{% for alert in alert_box %}
+<div class="shadow alert alert-{{alert.type|default('primary')}} mt-3 mb-0">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{alert.text|raw}}
+</div>
+{% endfor %}
+{% endif %}
+
+{# Show alert boxes in sessions #}
+{% if _session.alert_box %}
+{% for alert in _session.alert_box %}
+<div class="shadow alert alert-{{alert.type|default('primary')}} mt-3 mb-0">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{alert.text|raw}}
+</div>
+{% endfor %}
 {% endif %}

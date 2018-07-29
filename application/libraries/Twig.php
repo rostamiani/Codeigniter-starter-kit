@@ -63,6 +63,10 @@ class Twig
 					array_merge($this->functions_safe, $params['functions_safe'])
 				);
 		}
+
+		// Add $_SESSION as a global variable
+		// Make sure that you loaded session library before twig library
+		$this->addGlobal('_session',$_SESSION);
 	}
 
 	protected function resetTwig()
