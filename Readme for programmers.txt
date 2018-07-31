@@ -20,6 +20,7 @@
 		-type : Bootstrap color classes (success|danger|info|warning|primary|secondary)
 
 	You can user sessions to add alerts too. Just add alert to $_SESSION['alert_box]
+	Or using add_alert($text, $type) helper function
 
 - page_header(string): The text at header and the top of each page
 
@@ -62,3 +63,18 @@
 
 	- Example:
 		$this->auth->just_for(['user','admin','manager']);
+
+5.Labels
+
+	Add list labels in application/config/Labels.php with this format:
+
+	$config['label']['name'] = 'نام';
+
+	labels can be arrays:
+
+	$config['label']['status'] = 
+	[
+		0 => 'فعال',
+		1 => 'غیر فعال',
+		2 => 'حذف شده'
+	];

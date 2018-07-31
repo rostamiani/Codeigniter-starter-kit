@@ -21,7 +21,7 @@ class Twig
 		'base_url', 'site_url', 'datetime_to_jalali'
 	];
 	private $functions_safe = [
-		'form_open', 'form_close', 'form_error', 'set_value', 'form_hidden', 'form_open_multipart'
+		'form_open', 'form_close', 'form_error', 'set_value', 'form_hidden', 'form_open_multipart', 'num_to_fa'
 	];
 
 	/**

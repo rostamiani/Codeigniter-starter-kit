@@ -273,7 +273,7 @@ class MY_Model extends CI_Model
 
             $this->trigger('after_update', array($data, $result));
 
-            return $result;
+            return $this->_database->affected_rows();
         }
         else
         {
@@ -960,6 +960,10 @@ class MY_Model extends CI_Model
      */
     protected function dates_to_jalali($row)
 	{
+        if(empty($row)) {
+            return $row;
+        }
+
         $this->load->library('jalali');
         
         // For each field
@@ -975,6 +979,10 @@ class MY_Model extends CI_Model
 
 	protected function dates_to_georgian($row)
 	{
+        if(empty($row)) {
+            return $row;
+        }
+
         $this->load->library('jalali');
 
         // For each field

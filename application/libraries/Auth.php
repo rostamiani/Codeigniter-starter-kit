@@ -53,7 +53,7 @@ class Auth
 				log_message('error','Security: A guest user tried to access '.uri_string().' page.');
 
 				// Redirect to login page
-				redirect(base_url().'/authentication/login','refresh');
+				redirect(base_url().'authentication/login','refresh');
 			}
 
 			// Show error

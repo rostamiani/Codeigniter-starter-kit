@@ -29,6 +29,11 @@
                 <a href="{{base_url()}}report"><i class="fa fa-chart-pie"></i> <span class="nav-label">گزارش ها</span>  </a>
             </li>
             {% if this_user.type_title in ['admin'] %}
+            <li class="{% if uri == 'company' %}active{% endif %}">
+                <a href="{{base_url()}}company"><i class="fa fa-cogs"></i> <span class="nav-label">لیست شرکت ها</span></a>
+            </li>
+            {% endif %}
+            {% if this_user.type_title in ['admin'] %}
             <li class="{% if uri == 'user' %}active{% endif %}">
                 <a href="{{base_url()}}user"><i class="fa fa-users"></i> <span class="nav-label">لیست کاربران</span></a>
             </li>
