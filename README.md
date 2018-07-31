@@ -4,7 +4,7 @@ A ready to start project with Twig template installed
 ###################################
 # Programmer notes                #
 # Mohammad Mahdi Rostamiani       #
-# mahdi.temps@gmail.com@gmail.com #
+# mahdi.temps@gmail.com           #
 ###################################
 
 1.Twig template variables:
