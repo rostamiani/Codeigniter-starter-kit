@@ -1,12 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-if ( ! function_exists('add_alert'))
+if ( ! function_exists('add_session_alert'))
 {
 	/**
 	 * Add alert to next page refresh
 	 */
-	function add_alert($text, $type='primary')
+	function add_session_alert($text, $type='primary')
 	{
 		$_SESSION['alert_box'][] = [
             'text' => $text,

@@ -21,10 +21,13 @@ A ready to start project with Twig template installed
 		-text : The message text
 		-type : Bootstrap color classes (success|danger|info|warning|primary|secondary)
 
-	You can user sessions to add alerts too. Just add alert to $_SESSION['alert_box]
-	Or using add_alert($text, $type) helper function
+	Note: You can use sessions to add alerts too. Just add alert to $_SESSION['alert_box']
+	Or using add_session_alert($text, $type) helper function
+	Session alerts will be displayed at the next page request)
 
 - page_header(string): The text at header and the top of each page
+
+- page_header_icon(string): Page header icon as Font Awesome class
 
 - top_buttons(array of objects): An array of object to add buttons to the top of the page
 	button properties:
@@ -34,6 +37,7 @@ A ready to start project with Twig template installed
 		-icon : Button icon as Font Awesome class (Example 'fas fa-plus-square')
 		-class : Some additional classes for the button
 		-attr : Additional attributes for button such as id, class and etc
+Note: you can define custom elements in in button bar using block 'top_buttons_custom'
 
 -breadcrumb(array of objects): Adds a breadcrumb on top of the page
 	breadcrumb properties:

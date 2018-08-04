@@ -48,11 +48,9 @@
                             <a href="{{base_url()}}message" class="dropdown-item">
                                 <i class="fa fa-envelope"></i> <strong>نمایش تمامی پیام ها</strong>
                             </a>
-                            <div class="text-center link-block">
-                                <a href="{{base_url()}}message/add" class="dropdown-item">
-                                    <i class="fa fa-plus-square"></i> <strong>ارسال پیام جدید</strong>
-                                </a>
-                            </div>
+                            <a href="{{base_url()}}message/add" class="dropdown-item">
+                                <i class="fa fa-plus-square"></i> <strong>ارسال پیام جدید</strong>
+                            </a>
                         </div>
                     </li>
                 </ul>
@@ -139,6 +137,7 @@
         {{button.title}}
     </a>
     {% endfor %}
+    {% block top_buttons_custom %}{% endblock %}
 </div>
 {% endif %}
 </div>

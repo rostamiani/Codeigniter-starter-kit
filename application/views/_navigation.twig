@@ -28,6 +28,21 @@
             <li class="{% if uri == 'report' %}active{% endif %}">
                 <a href="{{base_url()}}report"><i class="fa fa-chart-pie"></i> <span class="nav-label">گزارش ها</span>  </a>
             </li>
+            <li class="{% if uri == 'message' %}active{% endif %}">
+                <a href="{{base_url()}}message"><i class="fa fa-envelope"></i> <span class="nav-label">پیام ها</span></span></a>
+            </li>
+            <!-- <li class="{% if uri == 'message' %}active{% endif %}">
+                <a href="{{base_url()}}message"><i class="fa fa-envelope"></i> <span class="nav-label">پیام ها</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li class="{% if uri == 'message/add' %}active{% endif %}"><a href="{{base_url()}}message/add"> <i class="fa fa-envelope "></i> پیام جدید  </a></li>
+                    <li class="{% if uri == 'message/index/inbox' %}active{% endif %}"><a href="{{base_url()}}message/index/inbox"> <i class="fa fa-inbox "></i> ورودی <span class="label label-warning float-right">16</span> </a></li>
+                    <li class="{% if uri == 'message/index/sent' %}active{% endif %}"><a href="{{base_url()}}message/index/sent"> <i class="far fa-envelope-open"></i> فرستاده شده</a></li>
+                    <li class="{% if uri == 'message/index/deleted' %}active{% endif %}"><a href="{{base_url()}}message/index/deleted"> <i class="far fa-trash-alt"></i> حذف شده</a></li>
+                </ul>
+            </li> -->
+            <li class="{% if uri == 'profile' %}active{% endif %}">
+                <a href="{{base_url()}}profile"><i class="fa fa-user-edit"></i> <span class="nav-label">ویرایش پروفایل</span>  </a>
+            </li>
             {% if this_user.type_title in ['admin'] %}
             <li class="{% if uri == 'company' %}active{% endif %}">
                 <a href="{{base_url()}}company"><i class="fa fa-cogs"></i> <span class="nav-label">لیست شرکت ها</span></a>
@@ -39,9 +54,6 @@
             </li>
             {% endif %}
             
-            <li class="{% if uri == 'profile' %}active{% endif %}">
-                <a href="{{base_url()}}profile"><i class="fa fa-user-edit"></i> <span class="nav-label">ویرایش پروفایل</span>  </a>
-            </li>
 
         </ul>
 
