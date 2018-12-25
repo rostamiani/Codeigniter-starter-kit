@@ -1,0 +1,123 @@
+{% extends '_base.twig' %}
+
+{% block content %}
+{# {{dump()}} #}
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<div class="card border-primary shadow">
+					<div class="card-header bg-primary text-white">
+						ویرایش کاربر {{user.username}}
+					</div>
+					<div class="card-body">
+						<form id="form_register" method="post" action="" data-parsley-validate="">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="username">نام کاربری :</label>
+										<input type="text" name="username" id="username" value="{{user.username}}" class="form-control" autocomplete="username" required data-parsley-required-message="نام کاربری را وارد کنید" data-parsley-remote="{{base_url()}}users/ajax_username_exists/{value}/{{user.username}}" data-parsley-remote-reverse="true" data-parsley-remote-message="این نام کاربری قبلا ثبت شده است" data-parsley-trigger="focusout">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="company">شرکت :</label>
+										<select name="company_id" id="company" class="form-control">
+											{% for company in companies %}
+												<option value="{{company.id}}" {% if company.id == this_user.company_id %}selected{% endif %}>{{company.title}}</option>
+											{% endfor %}
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="password">کلمه عبور :</label>
+										<input type="password" name="password" id="password" class="form-control" placeholder="بدون تغییر" autocomplete="new-password" pattern="^$|(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" data-parsley-pattern-message="کلمه عبور باید حداقل ۸ حرف و شامل حروف بزرگ، کوچک و یک رقم یا کاراکتر خاص باشد." data-parsley-equalto="#repassword" data-parsley-equalto-message="هر دو کلمه عبور باید یکسان باشند">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="repassword">تکرار کلمه عبور :</label>
+										<input type="password" name="repassword" id="repassword" class="form-control" autocomplete="new-password" data-parsley-equalto="#password" data-parsley-equalto-message="هر دو کلمه عبور باید یکسان باشند">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="first_name">نام :</label>
+										<input type="text" name="first_name" id="first_name" value="{{user.first_name}}" class="form-control" autocomplete="name">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="last_name">نام خانوادگی :</label>
+										<input type="text" name="last_name" id="last_name" value="{{user.last_name}}" class="form-control" autocomplete="family-name">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="mobile_number">تلفن همراه :</label>
+										<input type="text" name="mobile_number" id="mobile_number" value="{{user.mobile_number}}" class="form-control" autocomplete="mobile" pattern="^09\d{9}$" data-parsley-pattern-message="شماره تلفن همراه اشتباه است">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="phone_number">تلفن ثابت :</label>
+										<input type="text" name="phone_number" id="phone_number" value="{{user.phone_number}}" class="form-control" autocomplete="tel" pattern="^\d{8,12}$" data-parsley-pattern-message="شماره تلفن اشتباه است">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="address">آدرس پستی :</label>
+										<input type="text" name="address" id="address" value="{{user.address}}" class="form-control" autocomplete="street-address">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="date_birth">تاریخ تولد :</label>
+										<input type="text" name="date_birth" id="date_birth" value="{{user.date_birth}}" class="form-control" autocomplete="bday" placeholder="0000-00-00" pattern="^\d{4}-\d{1,2}-\d{1,2}$" data-parsley-pattern-message="فرمت تاریخ تولد اشتباه است">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<label for="status">وضعیت :</label>
+									<select name="status" id="status" class="form-control">
+										<option value="enabled" {% if this_user.status == "enabled" %}selected{% endif %}>فعال</option>
+										<option value="disabled" {% if this_user.status == "disabled" %}selected{% endif %}>غیر فعال</option>
+										<option value="removed" {% if this_user.status == "removed" %}selected{% endif %}>حذف شده</option>
+									</select>
+								</div>
+							</div>
+							<input type="hidden" name="id" value="{{user.id}}">
+							<div class="form-group">
+								<input type="submit" value="ویرایش" class="btn btn-primary btn-submit">
+								<a href="{{base_url()}}users" class="btn btn-success">بازگشت به لیست</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	$(document).ready(function(){
+
+		// Add persian date picker
+		$('[name=date_birth]').pDatepicker({
+			'format': 'YYYY-MM-DD',
+			'calendar':{
+				'persian':{
+					'locale': 'en'
+				}
+			},
+		});
+	});
+	</script>
+{% endblock %}

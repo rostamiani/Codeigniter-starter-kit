@@ -1,0 +1,56 @@
+{% extends "_base.twig" %}
+
+{% set page_header = 'پیام جدید' %}
+{% set page_header_icon = 'fa fa-plus' %}
+
+{% set top_buttons = [
+	{
+		title:'ارسال',
+		type:'primary',
+		class:'disabled btn_submit',
+		attr:"onclick='$(\"#form_message_add\").submit()'"
+    },
+] %}
+
+{% set breadcrumb = [
+	{
+		title:'لیست پیام ها',
+		url:base_url()~'message/index/inbox'
+	},
+	{
+		title:'پیام جدید',
+		active:true
+	}
+]
+%}
+
+{% block content %}
+{# {{dump()}} #}
+<div class="card card-body col-sm-6 offset-sm-3 shadow">
+    {{form_open_multipart('', {'data-parsley-validate':'', 'id':'form_message_add', 'class':'disable_submit_initially'})}}
+    <div class="form-row">
+        <div class="form-group col-xl-4">
+            <label for="title">عنوان:</label>
+            <input type="text" name="title" id="title" class="form-control" required data-parsley-required-message="نوشتن عنوان الزامی است">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-xl-4">
+            <label for="to_user_id">گیرنده:</label>
+            <select name="to_user_id[]" id="to_user_id" class="chosen-select" required multiple data-placeholder="نام گیرنده را انتخاب کنید" data-parsley-required-message="گرندگان پیام را انتخاب کنید">
+                {% for user in users %}
+                    <option value="{{user.id}}">{{user.first_name}} {{user.last_name}}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="text">متن پیام</label>
+            <textarea name="text" id="text" rows="10" class="form-control" required data-parsley-required-message="متن پیام را بنویسید"></textarea>
+        </div>
+    </div>
+    {{form_close()}}
+</div>
+
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends "_base.twig" %}
+
+{% set page_header = 'نمایش پیام' %}
+{% set page_header_icon = 'far fa-file' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 mb-3">
+        {% include "_message_nav.twig" %}
+    </div>
+    <div class="col-lg-9 mb-3">
+        <div class="card card-body shadow h-100">
+            <h3>
+                <span class="font-normal">موضوع : </span>
+                {{message.title}}
+            </h3>
+            <h5>
+                <span class="font-normal">از طرف: </span>
+                {{message.first_name_from}} {{message.last_name_from}}
+            </h5>
+            <h6 class="text-primary">{{num_to_fa(message.date_created)}}</h6>
+            <div class="mail-body">
+                {{message.text}}
+            </div>
+        </div>
+    </div>
+</div>
+
+{# {{dump()}} #}
+{% endblock content %}

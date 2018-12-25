@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /bime
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond $1 !^(index\.php|favicon\.ico|blog|robots\.txt|css|fonts|js|uploads|ckeditor|fileman|dbg-wizard\.php|eNamadLogo\.htm|assets)
+RewriteRule ^(.*)$ index.php/$1 [L]

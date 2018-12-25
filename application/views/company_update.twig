@@ -1,0 +1,49 @@
+{% extends '_base.twig' %}
+
+{% set page_header = 'ویرایش شرکت '~company.title %}
+{% set page_header_icon = 'fas fa-cog' %}
+
+{% set top_buttons = [
+	{
+		title:'ذخیره',
+		attr:"onclick='$(\"#form_company_add\").submit()'",
+		class:'btn_submit disabled'
+	},
+	{
+		title:'بازگشت به لیست',
+		link:base_url()~'company',
+		type:'danger'
+	},
+]
+%}
+
+{% set breadcrumb = [
+	{
+		title:'لیست شرکت ها',
+		url:base_url()~'company'
+	},
+	{
+		title:'ویرایش شرکت '~company.title,
+		active:true
+	}
+]
+%}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-6 offset-sm-3">
+        <div class="card card-body shadow">
+            {{form_open_multipart('', {'data-parsley-validate':'', 'id':'form_company_add', 'class':'disable_submit_initially'})}}
+            <div class="form-group">
+				<div class="form-group">
+					<label for="title">عنوان شرکت :</label>
+					<input type="text" name="title" id="title" class="form-control" autocomplete="title" value="{{company.title}}" required data-parsley-required-message="عنوان شرکت را وارد کنید" value="{{company.title}}">
+				</div>
+			</div>
+			<input type="hidden" name="id" value="{{company.id}}">
+			{{form_close()}}
+		</div>
+	</div>
+</div>
+{# {{dump()}} #}
+{% endblock %}

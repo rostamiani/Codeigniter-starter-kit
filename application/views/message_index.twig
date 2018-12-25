@@ -1,0 +1,128 @@
+{% extends '_base.twig' %}
+
+{% if folder == 'inbox' %}
+	{% set page_header = 'پیام های ورودی' %}
+	{% set page_header_icon = 'fa fa-inbox' %}
+{% elseif folder == 'sent' %}
+	{% set page_header = 'پیام های فرستاده شده' %}
+	{% set page_header_icon = 'far fa-envelope-open' %}
+{% elseif folder == 'deleted' %}
+	{% set page_header = 'پیام های حذف شده' %}
+	{% set page_header_icon = 'far fa-trash-alt' %}
+{% endif %}
+
+{% set top_buttons = 
+	[
+		{
+			title: 'ارسال پیام جدید',
+			link: base_url()~"message/add",
+			type: 'primary',
+			icon: 'fas fa-plus-square'
+		},
+	]
+%}
+
+{% block content %}
+{# {{dump()}} #}
+<div class="row">
+	<div class="col-lg-3 mb-3">
+		{% include "_message_nav.twig" %}
+	</div>
+	<div class="col-lg-9 mb-3">
+		<div class="card card-body shadow animated fadeInRight">
+			<div class="table-responsive">
+				<table id="table_messages" class="table table-striped table-hover">
+					<thead>
+						<tr>
+							{% if folder == 'inbox' %}
+							
+							<th>شناسه</th>
+							<th>عنوان</th>
+							<th>فرستنده</th>
+							<th>تاریخ</th>
+							
+							{% elseif folder == 'sent' %}
+							
+							<th>شناسه</th>
+							<th>عنوان</th>
+							<th>گیرنده</th>
+							<th>تاریخ</th>
+
+							{% elseif folder == 'deleted' %}
+							
+							<th>شناسه</th>
+							<th>عنوان</th>
+							<th>تاریخ</th>
+
+							{% endif %}
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		// Initialize datatable plugin
+		datatable_object = $('#table_messages').DataTable({
+			processing: true,
+			serverSide: true,
+			searchDelay: 1200,
+			ajax: '{{base_url()}}message/ajax_datatable/{{folder}}',
+			columns: [
+				{data:'id', visible:false},
+				{
+					data:'title',
+					render: function(data, type, row, meta){
+						if(type === 'display'){
+							data = '<a href="{{base_url()}}message/view/' + row.id + '">' + data + '</a>';
+						}
+						return data;
+					}
+				},
+
+				{% if folder == 'inbox' %}
+
+					{data:'user_from'},
+
+				{% elseif folder == 'sent' %}
+
+					{data:'user_to'},
+
+				{% elseif folder == 'deleted' %}
+
+				{% endif %}
+
+				{data:'date_sent'},
+			],
+        	language: {
+				"url": "{{base_url()}}assets/js/plugins/dataTables/Persian.json"
+			}
+		});
+
+		// Open message when it's row clicked
+		$('#table_messages').on('click','tr:has(td)', function(){
+			var message_id = datatable_object.row(this).data().id;
+		})
+
+		// Deleting confirmation
+		$('.btn-remove').click(function () {
+			
+			// Get hyperlink (href property is not used to prevent accedental deletes)
+			var href = $(this).data('href');
+
+			// Show confirmation modal
+			username = $(this).closest('tr').find('td.field-username').text();
+			modal_confirm('کاربر '+username+' حذف شود؟', function () {
+				window.location = href;
+			});
+
+			// Prevent default behaviuor
+			return false;
+		})
+	});
+</script>
+
+{% endblock %}

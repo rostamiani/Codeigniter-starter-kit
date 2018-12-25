@@ -1,0 +1,52 @@
+{% extends '_base.twig' %}
+
+{% block content %}
+{# {{dump()}} #}
+<div class="container">
+	<div class="card mt-5">
+		<div class="card-header">
+			لیست کاربران
+		</div>
+		<div class="card-body">
+			<table id="table_users" class="table table-striped">
+			</table>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		table_users = $('#table_users').DataTable({
+	        "processing": true,
+	        "serverSide": true,
+			'ajax': '{{base_url()}}users/ajax_datatable_list',
+			"columns": [
+                	{ "data": "username" ,"title": "نام کاربری"},
+                	{ "data": "first_name" ,"title": "نام"},
+                	{ "data": "last_name" ,"title": "نام خانوادگی"},
+                	{ "data": "company_title" ,"title": "نام شرکت"},
+                	{ "data": "status","title": "وضعیت" }
+                ],
+             "searching": false,
+        	"language": {
+        		"lengthMenu": "تعداد رکورد در هر صفحه: _MENU_",
+			    "search": "جستجو: ",
+			    "processing": "در حال بارگزاری...",
+			    "info": "رکورد _START_ تا _END_ از _TOTAL_ رکورد",
+			    "infoEmpty": "رکورد 0 تا 0 از 0 رکورد",
+			    "paginate": {
+					"next": "بعدی",
+					"previous": "قبلی",
+					"first": "صفحه اول",
+					"last": "صفحه آخر",
+					"zeroRecords": "اطلاعات موجود نیست.",
+					"infoEmpty": "اطلاعات موجود نیست.",
+					"emptyTable": "اطلاعات موجود نیست."
+		   		}
+		  	}
+
+		});
+	});
+
+</script>
+
+{% endblock %}

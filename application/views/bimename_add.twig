@@ -1,0 +1,68 @@
+{% extends '_base.twig' %}
+
+{% set page_header = 'لیست بیمه نامه ها' %}
+{% set page_header_icon = 'fa fa-file' %}
+
+{% set top_buttons = 
+	[
+        {
+            title:'ذخیره',
+            attr:"onclick='$(\"#form_contract_add\").submit()'"
+        },
+        {
+            title:'لغو',
+            link:base_url()~'bimename',
+            type:'danger'
+        },
+    ]
+%}
+
+{% block content %}
+    <div class="card card-body shadow animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <form id="form_contract_add" action="{{base_url()~'bimename/add'}}" method="post">
+                    نام و نام خانوادگی:
+                    <input type="text" name="fullname" id="fullname">
+                    کد ملی:
+                    <input type="text" name="codemelli" id="codemelli">
+                    تاریخ تولد:
+                    <input type="text" name="date_birth" id="date_birth">
+                    شماره موبایل:
+                    <input type="text" name="mobile" id="mobile">
+                    نوع بیمه:
+                    <select name="bimetype_id" id="bime_type">
+                        {% for type in bime_types %}
+                            <option value="{{type.id}}">{{type.title}}</option>
+                        {% endfor %}
+                    </select>
+                    شماره بیمه:
+                    <input type="text" name="code" id="code">
+                    مورد بیمه:
+                    <input type="text" name="comment" id="comment">
+                    مبلغ بیمه:
+                    <input type="text" name="price" id="price">
+                    تاریخ شروع:
+                    <input type="text" name="date_start" id="date_start">
+                    تاریخ پایان:
+                    <input type="text" name="date_end" id="date_end">
+                    تعداد اقساط:
+                    <input type="text" name="ghest_count" id="ghest_count">
+                    مبلغ هر قسط:
+                    <input type="text" name="ghest_price" id="ghest_price">
+                    هرچند ماه یکبار:
+                    <input type="text" name="month_period" id="month_period">
+                    فعال یا غیر فعال یادآوری:
+                    <input type="text" name="enable_alert" id="enable_alert">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+	$(document).ready(function() {
+		
+	}); // Document Ready
+</script>
+
+{# {{dump()}} #}
+{% endblock %}

@@ -1,0 +1,129 @@
+{% extends '_base.twig' %}
+
+{% set page_header = 'لیست نوع بیمه ها' %}
+{% set page_header_icon = 'fa fa-file' %}
+
+{# {% set top_buttons = 
+	[
+		{
+			title: 'تعریف بیمه نامه',
+			link: base_url()~"bime_type/add",
+			type: 'primary',
+			icon: 'fas fa-plus-square'
+		},
+	]
+%} #}
+
+{% block content %}
+<div class="col-lg-4 offset-lg-4">
+	<div class="card card-body shadow animated fadeInRight">
+		<div class="row">
+		<form action="" method="post">
+			<input type="text" name="title" class="form-control">
+			<input type="submit" value="اضافه کردن">
+		</form>
+	</div>
+</div>
+</div>
+	<div class="row">
+		<div class="col-lg-4 offset-lg-4">
+			<div class="card card-body shadow animated fadeInRight">
+				<div class="table-responsive">
+					<div class="table table-stripped table-hover">
+						عنوان
+							{% for item in list %}
+								<br/>
+								{{item.title}}
+							{% endfor %}
+						</tbody>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		// Initialize datatable plugin
+		table_users = $('#table_users').DataTable({
+			// "processing": true,
+			// "serverSide": true,
+			// searchDelay: 1200,
+			// 'ajax': '{{base_url()}}users/ajax_datatable_list',
+        	language: {
+				url: "{{base_url()}}assets/js/plugins/dataTables/Persian.json"
+			},
+		});
+		
+		// Change status on list change
+		$('#table_users .list_status').change(function(){
+			
+			// Display loading animation
+			$(this).addClass('loading bg-primary').prop('disabled',true);
+			
+			// Get status and user_id from list
+			var user_id = $(this).data('user-id');
+			var selected_status = $(this).find('option:selected').val();
+			var this_select = this;
+			
+			// Send change request to server
+			$.getJSON("{{base_url()}}user/ajax_set/"+user_id+"/status/"+selected_status)
+			.done(function(data){
+				// If success
+				if(data.code == 0)
+				{
+					// Remove animation
+					$(this_select).removeClass('loading bg-primary').prop('disabled',false);
+				}
+				else
+				{
+					// Remove animation
+					$(this_select).removeClass('loading bg-primary').prop('disabled',false);
+					
+					// Show error message
+					modal_message('خطا در ویرایش');
+				}
+			})
+			// If connection failed
+			.fail(function(){
+				// Show error message
+				modal_message('خطای ارتباط با سایت');
+			})
+		})
+		
+		// Deleting confirmation
+		$('.btn-remove').click(function () {
+			
+			// Get hyperlink (href property is not used to prevent accedental deletes)
+			var href = $(this).data('href');
+			
+			// Show confirmation modal
+			username = $(this).closest('tr').find('td.field-username').text();
+			modal_confirm('کاربر '+username+' حذف شود؟', function () {
+				window.location = href;
+			});
+			
+			// Prevent default behaviuor
+			return false;
+		})
+
+		// Select, deselect all chekboxes if the header checkbox changed
+		$('.chk_select_all').change(function(){
+	
+			// Check all checkboxes 
+			$('.chk_select').prop('checked', $(this).is(':checked') );
+		});
+
+		// Check header checkbox if all checkboxes was selected
+		$('.chk_select').change(function(){
+
+			// If all are cheched, check header checkbox
+			$('.chk_select_all').prop('checked', $('.chk_select').length == $('.chk_select:checked').length);
+		});
+
+	}); // Document Ready
+</script>
+
+{# {{dump()}} #}
+{% endblock %}

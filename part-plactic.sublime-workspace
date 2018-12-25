@@ -1,0 +1,1567 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"th",
+				"thead\tTag"
+			],
+			[
+				"pstx_mess",
+				"pstx_message_to_user"
+			],
+			[
+				"read",
+				"ready\t$(document).ready"
+			],
+			[
+				"fun",
+				"function_without_name"
+			],
+			[
+				"ea",
+				"each\t.each()"
+			],
+			[
+				"onl",
+				"onload\t: EventHandler FileReader"
+			],
+			[
+				"funct",
+				"function_without_name"
+			],
+			[
+				"form_",
+				"form_profile"
+			],
+			[
+				"grego",
+				"gregorian_to_jalali"
+			],
+			[
+				"sess",
+				"session_set_userdata\tCI - Session - Adding Custom Session Data"
+			],
+			[
+				"url",
+				"urlencode〔function〕"
+			],
+			[
+				"form-ch",
+				"form-check \tBootstrap 4 Class"
+			],
+			[
+				"form-che",
+				"form-check-input \tBootstrap 4 Class"
+			],
+			[
+				"scrip",
+				"script\tHTML - Script"
+			],
+			[
+				"scri",
+				"script"
+			],
+			[
+				"div",
+				"dropdown-divider \tBootstrap 4 Class"
+			],
+			[
+				"sho",
+				"show_error〔function〕"
+			],
+			[
+				"flo",
+				"float-right \tBootstrap 4 Class"
+			],
+			[
+				"ready",
+				"ready\tjQuery(document).ready"
+			],
+			[
+				"plug",
+				"plugins\t: HTMLCollection Document"
+			],
+			[
+				"mb",
+				"mb-5 \tBootstrap 4 Class"
+			],
+			[
+				"mysqlesc",
+				"mysql_real_escape_string"
+			],
+			[
+				"for",
+				"for\tAttr"
+			],
+			[
+				"table-s",
+				"table-success \tBootstrap 4 Class"
+			],
+			[
+				"table-",
+				"table-active \tBootstrap 4 Class"
+			],
+			[
+				"func",
+				"function_without_name"
+			],
+			[
+				"close",
+				"closest\t.closest()"
+			],
+			[
+				"company",
+				"company_model"
+			],
+			[
+				"user_",
+				"user_id"
+			],
+			[
+				"jso",
+				"json_encode"
+			],
+			[
+				"script",
+				"script\tTag"
+			],
+			[
+				"log",
+				"console_log"
+			],
+			[
+				"foc",
+				"focusout\t.focusout()"
+			],
+			[
+				"data",
+				"data-parsley-required-message"
+			],
+			[
+				"data-parsey-",
+				"data-parsley-pattern-message"
+			],
+			[
+				"unse",
+				"unset"
+			],
+			[
+				"data-parse",
+				"data-parsley-required-message"
+			],
+			[
+				"row",
+				"mdi-router-wireless\t<i>"
+			],
+			[
+				"attr",
+				"attr\t.attr() - single"
+			],
+			[
+				"has",
+				"hasAttribute\t( name: DOMString ): boolean Element"
+			],
+			[
+				"passwo",
+				"password_hash〔function〕"
+			],
+			[
+				"password",
+				"password_verify〔function〕"
+			],
+			[
+				"PASSWORD_",
+				"PASSWORD_DEFAULT〔constant〕"
+			],
+			[
+				"sea",
+				"search\t( regexp: any ): int String"
+			],
+			[
+				"cli",
+				"click\t.click()"
+			],
+			[
+				"mat",
+				"match(regexp)\tString"
+			],
+			[
+				"fil",
+				"filter〔function〕"
+			],
+			[
+				"form-c",
+				"form-control \tBootstrap 4 Class"
+			],
+			[
+				"input",
+				"input\tTag"
+			],
+			[
+				"db_",
+				"db_free_result\tCI - Active Record DB Free Result"
+			],
+			[
+				"db_inse",
+				"db_insert_id\tCI - Active Record DB Last Inserted Id"
+			],
+			[
+				"generate",
+				"generate_totals"
+			],
+			[
+				"function",
+				"function_with_name"
+			],
+			[
+				"ht",
+				"html\t.html()"
+			],
+			[
+				"trim",
+				"trim\t$.trim()"
+			],
+			[
+				"json",
+				"json_encode〔function〕"
+			],
+			[
+				"list-gro",
+				"list-group \tBootstrap 4 Class"
+			],
+			[
+				"list",
+				"list-group-item \tBootstrap 4 Class"
+			],
+			[
+				"bill_pay",
+				"bill_pay_id"
+			],
+			[
+				"label_",
+				"label_bill_id"
+			],
+			[
+				"mci_",
+				"mci_inquiry_form"
+			],
+			[
+				"try",
+				"try catch"
+			],
+			[
+				"curlerr",
+				"curl_error($ch"
+			],
+			[
+				"text",
+				"text-center \tBootstrap 4 Class"
+			],
+			[
+				"round",
+				"rounded-0 \tBootstrap 4 Class"
+			],
+			[
+				"slic",
+				"slice\t( start: int, end: int ): string String"
+			],
+			[
+				"bill_id",
+				"bill_ids"
+			],
+			[
+				"confir",
+				"confirm(message)\tWindow"
+			],
+			[
+				"remo",
+				"remove\t.remove()"
+			],
+			[
+				"functi",
+				"function_with_name"
+			],
+			[
+				"appen",
+				"append\t.append()"
+			],
+			[
+				"get",
+				"get\t$.get()"
+			],
+			[
+				"appe",
+				"append\t.append()"
+			],
+			[
+				"margin",
+				"margin\tproperty"
+			],
+			[
+				"log_bill",
+				"log_bill_model"
+			],
+			[
+				"backgr",
+				"background-color\tproperty"
+			],
+			[
+				"posit",
+				"position\tproperty"
+			],
+			[
+				"serial",
+				"serializeArray\t.serializeArray()"
+			],
+			[
+				"marg",
+				"margin-bottom\tproperty"
+			],
+			[
+				"payment",
+				"payment_chart"
+			],
+			[
+				"shado",
+				"box-shadow\tproperty"
+			],
+			[
+				"inquiry",
+				"inquiry_check"
+			],
+			[
+				"remov",
+				"removeprop\t.removeProp()"
+			],
+			[
+				"app",
+				"append\t.append()"
+			],
+			[
+				"transaction",
+				"transaction_id"
+			],
+			[
+				"che",
+				"check"
+			],
+			[
+				"tri",
+				"trigger\t.trigger()"
+			],
+			[
+				"session_uns",
+				"session_unset_userdata\tCI - Session - Removing Session Data"
+			],
+			[
+				"send",
+				"msg_send"
+			],
+			[
+				"curl",
+				"curl_exec"
+			],
+			[
+				"urlde",
+				"urlencode"
+			],
+			[
+				"salorderi",
+				"sales_order_id"
+			],
+			[
+				"formc",
+				"form-control \tBootstrap 4 Class"
+			],
+			[
+				"bo",
+				"bolder\tfont-weight"
+			],
+			[
+				"prop",
+				"prop\t.prop() - single"
+			],
+			[
+				"btn-out",
+				"btn-outline-primary \tBootstrap 4 Class"
+			],
+			[
+				"btn-pr",
+				"btn-primary \tBootstrap 4 Class"
+			],
+			[
+				"btn-primary",
+				"btn-outline-primary \tBootstrap 4 Class"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"text-w",
+				"text-white \tBootstrap 4 Class"
+			],
+			[
+				"card-",
+				"card-danger \tBootstrap 4 Class"
+			],
+			[
+				"rounded",
+				"rounded-circle \tBootstrap 4 Class"
+			],
+			[
+				"fo",
+				"font-awesome/"
+			],
+			[
+				"orderinfo",
+				"order_info_htm"
+			],
+			[
+				"inqui",
+				"inquiry_check"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"fail",
+				"filter(callback)\tArray"
+			],
+			[
+				"transa",
+				"transaction_id"
+			],
+			[
+				"resu",
+				"result\tFileReader"
+			],
+			[
+				"has-",
+				"has-danger \tBootstrap 4 Class"
+			],
+			[
+				"dan",
+				"alert-danger \tBootstrap 4 Class"
+			],
+			[
+				"larg",
+				"xx-large\tfont-size"
+			],
+			[
+				"t",
+				"text-danger \tBootstrap 4 Class"
+			],
+			[
+				"disco",
+				"discount_percent"
+			],
+			[
+				"disc",
+				"discount_percent"
+			],
+			[
+				"discou",
+				"discount_percent"
+			],
+			[
+				"config",
+				"config_CI\tConfig_CI"
+			],
+			[
+				"amoun",
+				"amount_with_discount"
+			],
+			[
+				"credi",
+				"credit_before"
+			],
+			[
+				"fonts",
+				"font-size\tproperty"
+			],
+			[
+				"btn-outli",
+				"btn-outline-secondary \tBootstrap 4 Class"
+			],
+			[
+				"text-",
+				"text-info \tBootstrap 4 Class"
+			],
+			[
+				"dropd",
+				"dropdown-divider \tBootstrap 4 Class"
+			],
+			[
+				"drpd",
+				"dropdown-header \tBootstrap 4 Class"
+			],
+			[
+				"btn-s",
+				"btn-sm \tBootstrap 4 Class"
+			],
+			[
+				"g",
+				"img/"
+			],
+			[
+				"fi",
+				"fixed\tbackground-attachment"
+			],
+			[
+				"ba",
+				"section-back1.jpg\tw:1641 h:1094"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: inpu",
+				"Snippet: input"
+			],
+			[
+				"removpa",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pach",
+				"Package Control: Remove Channel"
+			],
+			[
+				"packageup",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"valert",
+				"Snippet: Validation Set Rules"
+			],
+			[
+				"bootst",
+				"Goto Bootstrap: CSS"
+			],
+			[
+				"upda",
+				"FTPSync: Upload current file"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			]
+		],
+		"width": 548.0
+	},
+	"console":
+	{
+		"height": 362.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"PHP Class browser: Create Database",
+			"PHP Class browser: (Re)Create Database",
+			"import urllib.request,os,hashlib; h = '5b468e895e861582c8ac080daaae7722' + 'a0787a887fb19723f006ed5b020ffdf6'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Projects/Part Plastic/Part Project Manager"
+	],
+	"file_history":
+	[
+		"/E/Projects/Part Plastic/Part Project Manager/application/views/user_index.twig",
+		"/C/Users/Mahdi/Documents/Axial Parts/تصاویر راهنما/mdb reader vba.txt",
+		"/E/Projects/Part Plastic/Part Project Manager/application/cache/twig/38/38202ee9ecff8708d649ef07a6fa62b551527969e65f71245e1886c245cbe87c.php",
+		"/E/Projects/Part Plastic/Part Project Manager/application/views/user_add.twig",
+		"/E/Projects/Part Plastic/Part Project Manager/application/views/_modals.twig",
+		"/E/Projects/Part Plastic/Part Project Manager/application/controllers/User.php",
+		"/E/Projects/Part Plastic/Part Project Manager/application/core/MY_Model.php",
+		"/E/Projects/Part Plastic/Part Project Manager/application/views/_base.twig",
+		"/E/temp/test.htm",
+		"/E/Projects/Part Plastic/Part Project Manager/application/controllers/Test.php",
+		"/E/Projects/Part Plastic/Part Project Manager/application/libraries/Datatables.php",
+		"/E/Projects/Part Plastic/Part Project Manager/application/controllers/Message.php",
+		"/E/Projects/Part Plastic/Part Project Manager/application/models/Message_model.php",
+		"/E/Projects/Part Plastic/Part Project Manager/application/models/User_model.php",
+		"/E/Projects/Part Plastic/Part Project Manager/application/libraries/Twig.php",
+		"/E/Projects/Part Plastic/assets/backup/datatables/Buttons-1.5.2/js/dataTables.buttons.js",
+		"/E/Projects/Software/Sublime Text Build 3065/Data/Packages/User/LiveReload.sublime-settings",
+		"/E/Projects/Software/Sublime Text Build 3065/Data/Packages/LiveReload/LiveReload.sublime-settings",
+		"/E/Projects/Part Plastic/application/libraries/Jalali.php",
+		"/E/Projects/Part Plastic/application/core/MY_Model.php",
+		"/E/Projects/Part Plastic/application/controllers/Profile.php",
+		"/E/Projects/Part Plastic/application/models/User_model.php",
+		"/E/Projects/Part Plastic/application/views/_topbar.twig",
+		"/E/Projects/Part Plastic/Readme for programmers.txt",
+		"/E/Projects/Part Plastic/application/views/profile.twig",
+		"/E/Projects/Part Plastic/application/views/_navigation.twig",
+		"/E/Projects/Part Plastic/application/views/user_add.twig",
+		"/E/Projects/Part Plastic/application/libraries/Auth.php",
+		"/E/Projects/Part Plastic/application/libraries/EasyCrud.php",
+		"/E/Projects/Part Plastic/system/libraries/Upload.php",
+		"/E/Projects/Part Plastic/application/views/user.twig",
+		"/E/Projects/Part Plastic/application/controllers/User.php",
+		"/E/Projects/Part Plastic/application/cache/twig/0b/0bda472f32d5f328a1c956987d7d79995a05af58525b255745859e81fda4ee3e.php",
+		"/E/Projects/Part Plastic/application/views/_base.twig",
+		"/E/Projects/Part Plastic/assets/css/custom.css",
+		"/E/Projects/Part Plastic/assets/js/custom.js",
+		"/E/Projects/Part Plastic/application/logs/log-2018-07-24.php",
+		"/E/Projects/Part Plastic/application/views/profile_backup.twig",
+		"/E/Projects/Part Plastic/application/controllers/Dashboard.php",
+		"/E/Projects/Part Plastic/application/views/dashboard.twig",
+		"/E/Projects/Part Plastic/template_sample/inspinia_v2.8/Rails_Full_Version/app/assets/stylesheets/mailbox.css.scss",
+		"/E/Projects/Part Plastic/application/views/_modals.twig",
+		"/E/Projects/Part Plastic/application/views/user_list.twig",
+		"/E/Projects/Part Plastic/readme.rst",
+		"/E/Projects/Part Plastic/Readme.txt",
+		"/E/Projects/Part Plastic/assets/css/bootstrap.rtl.min.css",
+		"/E/Projects/Part Plastic/application/views/user_edit.twig",
+		"/E/Projects/Part Plastic/application/views/user_edit_old.twig",
+		"/E/Projects/Part Plastic/application/controllers/Authentication.php",
+		"/E/Projects/Part Plastic/application/libraries/Twig.php",
+		"/E/Projects/Part Plastic/application/core/MY_Controller.php",
+		"/E/Projects/Part Plastic/assets/backup/datatables/pdfmake-0.1.36/pdfmake.js",
+		"/E/Projects/Part Plastic/template_sample/inspinia_v2.8/Angular_Seed_Project_MEANJS/modules/users/client/users.client.module.js",
+		"/E/Projects/Part Plastic/application/logs/log-2018-07-23.php",
+		"/E/Projects/Part Plastic/assets/css/bootstrap.min.rtl.css",
+		"/E/Projects/Part Plastic/application/config/routes.php",
+		"/E/Projects/Part Plastic/assets/css/style_rtl.css",
+		"/E/Projects/Part Plastic/application/controllers/Report.php",
+		"/E/Projects/Part Plastic/application/views/report.twig",
+		"/E/Projects/Part Plastic/application/language/persian/form_validation_lang.php",
+		"/E/Projects/Part Plastic/application/models/Company_model.php",
+		"/E/Projects/Part Plastic/application/views/register.twig",
+		"/E/Projects/Part Plastic/application/views/login.twig",
+		"/E/Projects/Part Plastic/application/config/autoload.php",
+		"/E/Projects/Part Plastic/application/logs/log-2018-07-22.php",
+		"/E/Projects/Part Plastic/application/controllers/Login.php",
+		"/E/Projects/Part Plastic/assets/css/style_rtl2.css",
+		"/E/Projects/Part Plastic/application/views/users_ajax.twig",
+		"/E/Projects/Part Plastic/assets/css/style.css",
+		"/E/Projects/Part Plastic/application/views/_left_sidebar.twig",
+		"/E/Software/etc/inspinia_v2.8/HTML5_Full_Version RTL/dashboard_4_1.html",
+		"/E/Projects/Part Plastic/application/config/config.php",
+		"/E/Projects/Part Plastic/application/config/labels.php",
+		"/E/Projects/Part Plastic/application/language/persian/migration_lang.php",
+		"/E/Projects/Part Plastic/application/language/persian/label_lang.php",
+		"/E/Projects/Part Plastic/system/core/Lang.php",
+		"/E/Projects/Part Plastic/application/language/persian/messages.php",
+		"/E/Projects/Part Plastic/assets/js/inspinia_rtl.js",
+		"/E/Projects/Part Plastic/assets/js/inspinia.js",
+		"/E/Projects/Part Plastic/application/controllers/Register.php",
+		"/E/Projects/Part Plastic/application/views/_base_no_menu.twig",
+		"/E/Projects/Part Plastic/application/views/_base_bare.twig",
+		"/E/Software/etc/inspinia_v2.8/HTML5_Full_Version RTL/login.html",
+		"/E/Projects/Part Plastic/application/config/database.php",
+		"/E/Projects/Part Plastic/application/views/_footer.twig",
+		"/E/Projects/Part Plastic/application/views/_demo.twig",
+		"/E/Software/etc/inspinia_v2.8/HTML5_Full_Version RTL/index.html",
+		"/E/Projects/Part Plastic/system/core/Input.php",
+		"/E/Projects/Part Plastic/system/core/Security.php",
+		"/E/Projects/Part Plastic/system/database/drivers/mysql/mysql_driver.php",
+		"/E/Software/etc/inspinia_v2.8/HTML5_Full_Version/dashboard_4_1.html",
+		"/E/Projects/Part Plastic/.htaccess",
+		"/E/Projects/Part Plastic/application/controllers/Users.php",
+		"/E/Projects/Part Plastic/application/views/index.html",
+		"/E/Projects/Part Plastic/application/views/users.twig",
+		"/E/Projects/Part Plastic/application/views/register_backup.twig",
+		"/E/Projects/Part Plastic/application/views/_alert.twig",
+		"/E/Projects/Part Plastic/assets/custom.js",
+		"/C/Users/Mahdi/Downloads/register/register.html",
+		"/C/Users/Mahdi/Downloads/register.html",
+		"/E/Projects/Part Plastic/application/views/user_remove.twig",
+		"/E/Projects/Part Plastic/application/logs/log-2018-07-13.php",
+		"/E/Projects/Part Plastic/application/logs/log-2018-07-12.php",
+		"/E/Projects/Part Plastic/application/views/test.twig",
+		"/E/Projects/Part Plastic/application/logs/log-2018-07-10.php",
+		"/E/Projects/Part Plastic/application/core/MY_Model_new.php",
+		"/E/Projects/Part Plastic/system/helpers/inflector_helper.php",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_variables.scss",
+		"/E/Projects/Part Plastic/application/views/login_2.twig",
+		"/E/Projects/Part Plastic/application/views/_header.twig",
+		"/E/Projects/Part Plastic/assets/custom.css",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_alert.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_badge.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_breadcrumb.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_button-group.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_card.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_carousel.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_close.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_custom-forms.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_dropdown.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_forms.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_grid.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_input-group.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_jumbotron.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_list-group.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_modal.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_nav.scss",
+		"/E/Projects/Part Plastic/assets/bootstrap/scss/_navbar.scss"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"",
+			"E:\\Projects\\Part Plastic\\application\\views",
+			"",
+			"E:\\Projects\\Part Plastic\\assets\\bootstrap\\scss"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"\"",
+			"My.Settings.",
+			"columns:",
+			".datatables",
+			"datatable",
+			"trigger",
+			"er",
+			",",
+			"<sc",
+			"script",
+			"id=\"wrapper h-100\"",
+			"generate",
+			"mto",
+			"m",
+			"`",
+			"->for(",
+			"valida",
+			"->validation_error",
+			"insert",
+			"validation_err",
+			"validat",
+			".$str_time",
+			"$str_time",
+			"$date_array[3]",
+			"str_datetime",
+			"$str_date",
+			"jalali_to_gregorian_str",
+			"date_created",
+			"]",
+			"update",
+			"rostami",
+			"file_name",
+			"encrypt_name",
+			"user/list",
+			".type}}",
+			"add(",
+			"robot",
+			"onebyone",
+			"img",
+			"box",
+			"label",
+			"دو کلمه عبور معادل نیستند",
+			"$data['alert']",
+			"$data['alert_box']",
+			"$data['alert']",
+			"کاربر",
+			"<div class=\"row\">",
+			"<div class=\"form-group\">",
+			"data-parsley-.*?\".*?\"",
+			"(<input .*?) data-(.*)>",
+			"(<input .*?) (data-.*)>",
+			"alert",
+			"validat",
+			"Updated",
+			"custom",
+			"upload",
+			"alert",
+			"alerts",
+			"alert",
+			"['alert']",
+			"alert",
+			":",
+			"alert",
+			"uri",
+			"-leeeft",
+			"-left",
+			"-leeeft",
+			"-right",
+			".ml-\\d",
+			"-right",
+			"toolbar",
+			"\"",
+			"label",
+			"echo 'type:",
+			"echo '",
+			"$data['alert'] = [",
+			"update(",
+			"$user['date_birth']",
+			"$user",
+			"login",
+			"form_open",
+			"alert",
+			"$user",
+			"user",
+			"name=",
+			"val",
+			"chk_change_pass",
+			"custom.",
+			"Browse",
+			"brows",
+			"base_url(),\"ref",
+			"base_url(),'ref",
+			"base_url(), 'ref",
+			"base_url(), \"ref",
+			"base_url(),",
+			"base_url())",
+			"base_url()'",
+			"base_url()\"",
+			"label",
+			"_",
+			"image_file_name",
+			"image_file",
+			"minimalize-styl-2",
+			" user.",
+			"user.",
+			"<img",
+			"img",
+			"p",
+			"span",
+			"report",
+			"reports",
+			"profile",
+			"user_image",
+			"num_ro",
+			"count(",
+			"->exists",
+			"->validate",
+			"_array",
+			"array_",
+			"array",
+			"validate(",
+			"validate = ",
+			"validate",
+			"validate(",
+			"validate",
+			"-FD",
+			"profile",
+			"=>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"$1 >",
+			"-left",
+			"-right",
+			"-left",
+			"-leeeft",
+			" this_user.",
+			"this_user.",
+			"margin: $1 $4 $3 $2",
+			"margin: $1 $2 $3 $4",
+			"-left",
+			"-right",
+			"-leeeft",
+			"left",
+			"right",
+			"leeeft",
+			"left",
+			"right",
+			"leeft"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 195.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 202.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "part-plactic.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"user",
+				"application\\views\\user_index.twig"
+			],
+			[
+				"modal",
+				"application\\views\\_modals.twig"
+			],
+			[
+				"mymodel",
+				"application\\core\\MY_Model.php"
+			],
+			[
+				"controllus",
+				"application\\controllers\\User.php"
+			],
+			[
+				"basetw",
+				"application\\views\\_base.twig"
+			],
+			[
+				"usermo",
+				"application\\models\\User_model.php"
+			],
+			[
+				"messpp",
+				"application\\controllers\\Message.php"
+			],
+			[
+				"datatabphp",
+				"application\\libraries\\Datatables.php"
+			],
+			[
+				"datatab",
+				"assets\\backup\\datatables\\Buttons-1.5.2\\js\\dataTables.buttons.js"
+			],
+			[
+				"contruser",
+				"application\\controllers\\User.php"
+			],
+			[
+				"message",
+				"application\\controllers\\Message.php"
+			],
+			[
+				"usermode",
+				"application\\models\\User_model.php"
+			],
+			[
+				"mymod",
+				"application\\core\\MY_Model.php"
+			],
+			[
+				"jalali",
+				"application\\libraries\\Jalali.php"
+			],
+			[
+				"model.",
+				"application\\models\\User_model.php"
+			],
+			[
+				"twig",
+				"application\\libraries\\Twig.php"
+			],
+			[
+				"readme",
+				"Readme for programmers.txt"
+			],
+			[
+				"toptw",
+				"application\\views\\_topbar.twig"
+			],
+			[
+				"profiltw",
+				"application\\views\\profile.twig"
+			],
+			[
+				"navig",
+				"application\\views\\_navigation.twig"
+			],
+			[
+				"profil",
+				"application\\controllers\\Profile.php"
+			],
+			[
+				"libupload",
+				"system\\libraries\\Upload.php"
+			],
+			[
+				"libr/",
+				"application\\libraries\\Auth.php"
+			],
+			[
+				"addtwig",
+				"application\\views\\user_add.twig"
+			],
+			[
+				"readmefor",
+				"Readme for programmers.txt"
+			],
+			[
+				"usertw",
+				"application\\views\\user.twig"
+			],
+			[
+				"user.php",
+				"application\\controllers\\User.php"
+			],
+			[
+				"top",
+				"application\\views\\_topbar.twig"
+			],
+			[
+				"profitw",
+				"application\\views\\profile.twig"
+			],
+			[
+				"toptwi",
+				"application\\views\\_topbar.twig"
+			],
+			[
+				"userlis",
+				"application\\views\\user_list.twig"
+			],
+			[
+				"base",
+				"application\\views\\_base.twig"
+			],
+			[
+				"customjs",
+				"assets\\js\\custom.js"
+			],
+			[
+				"custcss",
+				"assets\\css\\custom.css"
+			],
+			[
+				"readmepr",
+				"Readme for programmers.txt"
+			],
+			[
+				"profile",
+				"application\\controllers\\Profile.php"
+			],
+			[
+				"prowig",
+				"application\\views\\profile_backup.twig"
+			],
+			[
+				"usermodel",
+				"application\\models\\User_model.php"
+			],
+			[
+				"profiletw",
+				"application\\views\\profile.twig"
+			],
+			[
+				"controprofile",
+				"application\\controllers\\Profile.php"
+			],
+			[
+				"profiltwig",
+				"application\\views\\profile.twig"
+			],
+			[
+				"iboxcss",
+				"template_sample\\inspinia_v2.8\\Rails_Full_Version\\app\\assets\\stylesheets\\mailbox.css.scss"
+			],
+			[
+				"dashbtwi",
+				"application\\views\\dashboard.twig"
+			],
+			[
+				"dashboard",
+				"application\\controllers\\Dashboard.php"
+			],
+			[
+				"readm",
+				"readme.rst"
+			],
+			[
+				"modals",
+				"application\\views\\_modals.twig"
+			],
+			[
+				"_.twig",
+				"application\\views\\_modals.twig"
+			],
+			[
+				"alluser",
+				"application\\controllers\\User.php"
+			],
+			[
+				"bootstrapminrtl",
+				"assets\\css\\bootstrap.min.rtl.css"
+			],
+			[
+				"userlist",
+				"application\\views\\user_list.twig"
+			],
+			[
+				"naviga",
+				"application\\views\\_navigation.twig"
+			],
+			[
+				"topba",
+				"application\\views\\_topbar.twig"
+			],
+			[
+				"useredit",
+				"application\\views\\user_edit.twig"
+			],
+			[
+				"profitwi",
+				"application\\views\\profile.twig"
+			],
+			[
+				"proftwig",
+				"application\\views\\profile.twig"
+			],
+			[
+				"authenticat",
+				"application\\controllers\\Authentication.php"
+			],
+			[
+				"custo",
+				"assets\\js\\custom.js"
+			],
+			[
+				"authent",
+				"application\\controllers\\Authentication.php"
+			],
+			[
+				"mycontrol",
+				"application\\core\\MY_Controller.php"
+			],
+			[
+				"usersmo",
+				"template_sample\\inspinia_v2.8\\Angular_Seed_Project_MEANJS\\modules\\users\\client\\users.client.module.js"
+			],
+			[
+				"profiletwig",
+				"application\\views\\profile.twig"
+			],
+			[
+				"assetcssbootsmin",
+				"assets\\css\\bootstrap.min.rtl.css"
+			],
+			[
+				"custjs",
+				"assets\\js\\custom.js"
+			],
+			[
+				"proftw",
+				"application\\views\\profile.twig"
+			],
+			[
+				"pofile",
+				"application\\controllers\\Profile.php"
+			],
+			[
+				"auth",
+				"application\\libraries\\Auth.php"
+			],
+			[
+				"routs",
+				"application\\config\\routes.php"
+			],
+			[
+				"styrtl",
+				"assets\\css\\style_rtl.css"
+			],
+			[
+				"navi",
+				"application\\views\\_navigation.twig"
+			],
+			[
+				"mycontr",
+				"application\\core\\MY_Controller.php"
+			],
+			[
+				"userli",
+				"application\\views\\user_list.twig"
+			],
+			[
+				"navigat",
+				"application\\views\\_navigation.twig"
+			],
+			[
+				"userlitw",
+				"application\\views\\user_list.twig"
+			],
+			[
+				"my_control",
+				"application\\core\\MY_Controller.php"
+			],
+			[
+				"langvalid",
+				"application\\language\\persian\\form_validation_lang.php"
+			],
+			[
+				"company_model",
+				"application\\models\\Company_model.php"
+			],
+			[
+				"userphp",
+				"application\\controllers\\User.php"
+			],
+			[
+				"userlistw",
+				"application\\views\\user_list.twig"
+			],
+			[
+				"DASHBTW",
+				"application\\views\\dashboard.twig"
+			],
+			[
+				"DASHB",
+				"application\\controllers\\Dashboard.php"
+			],
+			[
+				"customcss",
+				"assets\\css\\custom.css"
+			],
+			[
+				"registertw",
+				"application\\views\\register.twig"
+			],
+			[
+				"authenti",
+				"application\\controllers\\Authentication.php"
+			],
+			[
+				"logintw",
+				"application\\views\\login.twig"
+			],
+			[
+				"autolo",
+				"application\\config\\autoload.php"
+			],
+			[
+				"libtwig",
+				"application\\libraries\\Twig.php"
+			],
+			[
+				"userstw",
+				"application\\views\\user_list.twig"
+			],
+			[
+				"dashb",
+				"application\\controllers\\Dashboard.php"
+			],
+			[
+				"autoload",
+				"application\\config\\autoload.php"
+			],
+			[
+				"modaltw",
+				"application\\views\\_modals.twig"
+			],
+			[
+				"logintwi",
+				"application\\views\\login.twig"
+			],
+			[
+				"login",
+				"application\\controllers\\Login.php"
+			],
+			[
+				"stylertl",
+				"assets\\css\\style_rtl.css"
+			],
+			[
+				"style",
+				"assets\\css\\style.css"
+			],
+			[
+				"stylecss",
+				"assets\\css\\style.css"
+			],
+			[
+				"modaltwig",
+				"application\\views\\_modals.twig"
+			],
+			[
+				"modaltwi",
+				"application\\views\\_modals.twig"
+			],
+			[
+				"logintwig",
+				"application\\views\\login.twig"
+			],
+			[
+				"tpotw",
+				"application\\views\\_topbar.twig"
+			],
+			[
+				"user.ph",
+				"application\\controllers\\User.php"
+			],
+			[
+				"my_controll",
+				"application\\core\\MY_Controller.php"
+			],
+			[
+				"edittw",
+				"application\\views\\user_edit.twig"
+			],
+			[
+				"topbar",
+				"application\\views\\_topbar.twig"
+			],
+			[
+				"left",
+				"application\\views\\_left_sidebar.twig"
+			],
+			[
+				"users",
+				"application\\views\\users.twig"
+			],
+			[
+				"dashbo",
+				"application\\controllers\\Dashboard.php"
+			],
+			[
+				"lefttw",
+				"application\\views\\_left_sidebar.twig"
+			],
+			[
+				"confconf",
+				"application\\config\\config.php"
+			],
+			[
+				"autoloa",
+				"application\\config\\autoload.php"
+			],
+			[
+				"lang",
+				"system\\core\\Lang.php"
+			],
+			[
+				"insrtl",
+				"assets\\js\\inspinia_rtl.js"
+			],
+			[
+				"inijs",
+				"assets\\js\\inspinia.js"
+			],
+			[
+				"mycont",
+				"application\\core\\MY_Controller.php"
+			],
+			[
+				"rout",
+				"application\\config\\routes.php"
+			],
+			[
+				"register",
+				"application\\controllers\\Register.php"
+			],
+			[
+				"condataba",
+				"application\\config\\database.php"
+			],
+			[
+				"footertw",
+				"application\\views\\_footer.twig"
+			],
+			[
+				"insjs",
+				"assets\\js\\inspinia_rtl.js"
+			],
+			[
+				"",
+				"application\\views\\_base.twig"
+			],
+			[
+				"confdata",
+				"application\\config\\database.php"
+			],
+			[
+				"security",
+				"system\\core\\Security.php"
+			],
+			[
+				"ystecoreinp",
+				"system\\core\\Input.php"
+			],
+			[
+				"input",
+				"system\\core\\Input.php"
+			],
+			[
+				"databa",
+				"application\\config\\database.php"
+			],
+			[
+				"alert",
+				"application\\views\\_alert.twig"
+			],
+			[
+				"userstwi",
+				"application\\views\\users.twig"
+			],
+			[
+				"usersph",
+				"application\\controllers\\Users.php"
+			],
+			[
+				"edit",
+				"application\\views\\user_edit.twig"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\Projects\\Khayyamkar\\khayyamkar2.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

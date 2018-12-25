@@ -1,0 +1,67 @@
+.DS_Store
+
+application/cache/*
+!application/cache/index.html
+
+application/logs/*
+!application/logs/index.html
+
+!application/*/.htaccess
+
+composer.lock
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
+
+# Just add my files
+# *
+# !*/
+# !_*.twig
+
+!/README.md
+!application/helpers/custom_helper.php
+
+!/application/libraries/Twig.php
+!/application/libraries/Auth.php
+!/application/libraries/Jalali.php
+!/application/core/MY_Model.php
+!/application/core/MY_Controller.php
+!/application/language/persian/*
+
+!/application/config/labels.php
+!/application/config/autoload.php
+
+# !/assets/*
+# !/assets/*/*
+# !/assets/*/*/*
+# !/assets/*/*/*/*
+# !/assets/*/*/*/*/*
+# !/assets/*/*/*/*/*/*
+# !/assets/*/*/*/*/*/*/*
+
+# # Include twig library
+# !/application/third_party/Twig2/*
+# !/application/third_party/Twig2/*/*
+# !/application/third_party/Twig2/*/*/*
+# !/application/third_party/Twig2/*/*/*/*
+# !/application/third_party/Twig2/*/*/*/*/*
+# !/application/third_party/Twig2/*/*/*/*/*/*
+# !/application/third_party/Twig2/*/*/*/*/*/*/*
+# !/application/third_party/Twig2/*/*/*/*/*/*/*/*
